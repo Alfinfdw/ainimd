@@ -83,7 +83,7 @@ loadDatabase()
 
 
 global.authFile = `${opts._[0] || 'session'}.data.json`
-const { state, saveState } = useSingleFileAuthState(global.authFile)
+const { state, saveState } = useMutilefileAuthState(global.authFile)
 
 
 //const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
