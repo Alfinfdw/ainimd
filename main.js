@@ -1,6 +1,6 @@
 require('./config')
 const {
-  useSingleFileAuthState,
+  useMultiFileAuthState,
   makeInMemoryStore,
   makeWALegacySocket,
   DisconnectReason
