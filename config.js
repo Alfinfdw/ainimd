@@ -2,12 +2,12 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 owner = [
-  ['6281257172080'],
-  ['6285875300774'],
-  ['6281257172080' , 'Owner', true]
+  [''],
+  [''],
+  ['94726083178' , 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-mods = ['6285875300774'], // Want some help?
+mods = ['94726083178'], // Want some help?
 prems = [] // Premium user has unlimited limit
 APIs = { // API Prefix
   // name: 'https://website'
@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@iBeng_bot'
-  var sticker_author = 'iBeng'
+  var sticker_name = '@cherry_bot'
+  var sticker_author = 'Lakshan'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -58,7 +58,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 packname = sticker_name
 author = sticker_author
-wm = '© iBeng'
+wm = '© Lakshan'
 
 Intervalmsg = 1800 //detik
 
